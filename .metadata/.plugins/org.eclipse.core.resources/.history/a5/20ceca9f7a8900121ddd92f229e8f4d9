@@ -1,0 +1,47 @@
+package com.example.test;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+	
+	private EditText m_vwEditTextName;
+	private EditText m_vwEditTextValue;
+    private Button m_vwButton;
+    private ListView m_vwList;
+    private ArrayAdapter<String> m_adapter;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        super.onCreate(savedInstanceState);
+        
+        m_vwEditTextName = (EditText) findViewById(R.id.editTextName);
+        m_vwEditTextValue = (EditText) findViewById(R.id.editTextValue);
+        m_vwButton = (Button) findViewById(R.id.buttonValidate);
+        m_vwList = (ListView) findViewById(R.id.list);
+        
+        
+        
+//        TextView tv = new TextView(this);
+//        tv.setText("Hello Site du Zér0 !");
+         
+//        setContentView(tv);
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+}

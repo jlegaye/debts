@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Test</string>
+    <string name="app_name">Debts</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="me_doit">me doit</string>
+    <string name="euro_symbol">€</string>
+    <string-array name="listitems">
+        <item>Ramen noodles</item>
+        <item>Hot Pockets</item>
+        <item>Cheetos</item>
+    </string-array>
 
 </resources>

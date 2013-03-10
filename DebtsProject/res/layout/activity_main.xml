@@ -8,28 +8,61 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:layout_marginTop="180dp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextValue"
+        android:layout_toRightOf="@+id/editTextName"
+        android:text="@string/euro_symbol"
+        android:textSize="16pt" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:ems="10" />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="23dp"
-        android:text="@string/hello_world" />
+        android:layout_alignLeft="@+id/buttonValidate"
+        android:layout_below="@+id/editTextName"
+        android:layout_marginTop="18dp"
+        android:text="@string/me_doit" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="50dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Johann" >
+        android:inputType="numberDecimal" >
 
         <requestFocus />
     </EditText>
+
+    <Button
+        android:id="@+id/buttonValidate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listView"
+        android:layout_below="@+id/editTextValue"
+        android:layout_marginTop="24dp"
+        android:text="Valider" />
 
 </RelativeLayout>
